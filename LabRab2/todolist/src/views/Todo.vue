@@ -26,6 +26,7 @@
       />
       <hr>
       <NoteList
+          v-bind:notes="notes"
           @remove-note="removeNote"
       />
     </div>
@@ -43,7 +44,6 @@ import AddNote from "@/components/note/AddNote.vue";
       return {
         todos: [],
         notes: [],
-        loading: true,
         filter: 'all'
       }
     },
