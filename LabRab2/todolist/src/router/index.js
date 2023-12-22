@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import TodoView from '../views/Todo.vue'
+import Notes from "@/views/Notes.vue";
 import AboutView from '../views/About.vue'
 import RateView from '../views/Rate.vue'
 
@@ -9,8 +9,8 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'todo',
-      component: TodoView
+      name: 'notes',
+      component: Notes
     },
     {
       path: '/about',
